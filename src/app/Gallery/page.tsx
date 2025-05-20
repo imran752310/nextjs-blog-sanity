@@ -3,10 +3,10 @@ import React from 'react'
 
 const GalleryPage = () => {
   return (
-    <div>
+    <div className='w-[90%] mx-auto'>
         <Gallery />
     </div>
   )
 }
 
-export default Gallery
+export default GalleryPage

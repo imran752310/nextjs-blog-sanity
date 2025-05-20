@@ -8,11 +8,10 @@ export default function Navbar() {
   return (
    
 <>
-    <header className="flex shadow-md py-4 px-4 sm:px-10 bg-white dark:bg-gray-900 min-h-[70px] tracking-wide relative z-50">
+    <header className="flex shadow-md py-4 px-4 sm:px-10 bg-white dark:bg-gray-900 min-h-[75px] ">
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
-        <Link href="/" className="max-sm:hidden font-extrabold text-teal-600 text-2xl">BLOG SITE</Link>
-        <a href="javascript:void(0)" className="hidden max-sm:block"><img src="https://readymadeui.com/readymadeui-short.svg" alt="logo" className="w-9" /></a>
-
+        <Link href="/" className=" font-extrabold text-teal-600 text-3xl"><span className="text-black">Next</span> BLOG</Link>
+        
         <div id="collapseMenu"
           className="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
           <button id="toggleClose" className="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer">
