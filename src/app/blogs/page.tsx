@@ -1,8 +1,6 @@
 import BlogCard from "@/components/BlogCard";
 import { client } from "../../../sanity/lib/client";
 import { Post } from "../../../typing";
-import Hero from "@/components/Hero";
-import Gallery from "@/components/Gallery";
 
 export const revalidate = 60; //seconds
 
@@ -18,7 +16,6 @@ export default async function Home() {
 
   return (
     <>
-      
       <main className="flex min-h-screen flex-col w-[90%] mx-auto ">
         <h1 className="text-2xl font-bold uppercase my-20 text-center text-dark dark:text-light sm:text-3xl lg:text-5xl ">
           Most Recent <span className="text-teal-600">blogs</span>
@@ -29,9 +26,7 @@ export default async function Home() {
           ))}
         </section>
 
-        <div>
-        
-        </div>
+        <div></div>
       </main>
     </>
   );

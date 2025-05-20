@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="relative  h-[85vh] flex items-center justify-center bg-black text-white overflow-hidden mb-5">
-      
       {/* Background Image */}
       <Image
         src="/images/hero2.webp" // Replace with your image path
@@ -17,10 +16,12 @@ export default function HeroSection() {
       {/* Overlay Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
-          Explore the Future with <span className="text-teal-400">AI & Tech Insights</span>
+          Explore the Future with{" "}
+          <span className="text-teal-400">AI & Tech Insights</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-200 mb-6">
-          Dive into expert-written articles on artificial intelligence, emerging technologies, and innovations shaping our world.
+          Dive into expert-written articles on artificial intelligence, emerging
+          technologies, and innovations shaping our world.
         </p>
 
         <Link

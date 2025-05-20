@@ -3,7 +3,6 @@ import { client } from "../../../../sanity/lib/client";
 import { urlForImage } from "../../../../sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import { HandCoins, Heart, MessageCircle } from "lucide-react";
-// import { components } from "@/components/CustomComponent";
 
 export const revalidate = 60; //seconds
 
@@ -60,11 +59,10 @@ export default async function page({
           <div className="flex gap-2">
             <Heart /> 308
           </div>
-            <div className="flex gap-2">
-              <MessageCircle /> 34
-            </div>
+          <div className="flex gap-2">
+            <MessageCircle /> 34
+          </div>
         </div>
-
       </div>
 
       {/* Featured Image */}
@@ -88,12 +86,7 @@ export default async function page({
 
       {/* Main Body of Blog */}
       <section
-        className="text-lg leading-normal text-dark/80 dark:text-light/80
-      
-      
-      prose-strong:text-dark dark:prose-strong:text-white
-      
-      "
+        className="text-lg leading-normal text-dark/80 dark:text-light/80 prose-strong:text-dark dark:prose-strong:text-white"
       >
         <PortableText value={post.content} />
       </section>

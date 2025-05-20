@@ -12,8 +12,7 @@ export default function Footer() {
         <FooterContactForm />
       </section>
       <section className=" px-6 xs:px-8 sm:px-12  lg:px-16 xl:px-24 2xl:px-32 py-2 flex flex-col sm:flex-row justify-between items-center gap-2 ">
-
-      <div className="flex justify-center items-center gap-x-2 text-sm text-light">
+        <div className="flex justify-center items-center gap-x-2 text-sm text-light">
           <p className="">
             Developed
             <span>&nbsp;💖&nbsp;with&nbsp;</span>
@@ -26,21 +25,18 @@ export default function Footer() {
             <Image src="/sanity.svg" alt="sanity" width={24} height={24} />
           </Link>
         </div>
-      
+
         <div>
           <p className="text-xs text-light">
-            © 2024 <span className="text-light font-bold">&nbsp;Muhammad </span>
+            © 2024{" "}
+            <span className="text-light font-bold">&nbsp;Muhammad </span>
             <span className="text-accentDarkPrimary font-bold">
               Imarn&nbsp;
             </span>{" "}
             All rights reserved.
           </p>
         </div>
-
-
-
       </section>
-
     </footer>
   );
 }
