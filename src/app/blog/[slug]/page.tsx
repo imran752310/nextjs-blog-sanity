@@ -30,8 +30,6 @@ export default async function page({params:{slug}}:{params:{slug:string}}) {
       author->{bio,image,name}
   }[0]`;
   const post = await client.fetch(query);
-  // console.log(post);
-
 
 
   return (
@@ -87,7 +85,6 @@ export default async function page({params:{slug}}:{params:{slug:string}}) {
       ">
         <PortableText 
         value={post.content} 
-        // components={components} 
         />
         
       </section>
