@@ -30,7 +30,7 @@ export default function Gallery() {
               alt={`Gallery image ${index + 1}`}
               layout="fill"
               objectFit="cover"
-              className="rounded"
+              className="rounded hover:scale-105 transition-transform ease-out duration-500"
             />
           </div>
         ))}

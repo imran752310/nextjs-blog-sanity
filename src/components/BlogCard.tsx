@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { urlForImage } from "../../sanity/lib/image";
 import { Post } from "../../typing";
+import { ArrowUpRight, MessageCircle, MoveRight } from "lucide-react";
 
 export default function BlogCard({post}:{post:Post}) {
   return (
@@ -33,13 +34,14 @@ export default function BlogCard({post}:{post:Post}) {
  {/* Read More dynamic Link */}
         <Link
           href={`/blog/${post.slug}`}
-          className="block px-4 py-1 text-center bg-teal-500  hover:bg-teal-600  text-white  font-semibold "
+          className="flex px-4 py-1 text-center bg-teal-500  hover:bg-teal-600  text-white  font-semibold text-sm gap-2"
         >
-          Read More
+          Read More <MoveRight />
         </Link>
         </div>
-        <div>
-          Comments 4
+        <div className="flex text-sm text-gray-600">
+          <MessageCircle size={20} />
+          Comment 8
         </div>
       </div>
     </section>

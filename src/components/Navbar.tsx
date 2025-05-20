@@ -41,6 +41,9 @@ export default function Navbar() {
             <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='blogs'
               className="hover:text-teal-700  dark:text-white text-slate-900 block font-medium text-[15px]">Blog</a>
             </li>
+              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='/Gallery'
+              className="hover:text-teal-700  dark:text-white text-slate-900 block font-medium text-[15px]">Gallery</a>
+            </li>
             <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='/'
               className="hover:text-teal-700  dark:text-white text-slate-900 block font-medium text-[15px]">About</a>
             </li>
@@ -55,9 +58,9 @@ export default function Navbar() {
             <ThemeToggle />
           </div>
           <button
-            className="px-4 py-2 text-sm rounded-full font-medium cursor-pointer tracking-wide text-slate-900 border border-gray-400 bg-transparent hover:bg-gray-50 transition-all">Login</button>
+            className="px-4 py-2 text-sm rounded-full cursor-pointer tracking-wide text-slate-900 dark:text-slate-100 border border-gray-400 bg-transparent hover:bg-teal-500 transition-all">Login</button>
           <button
-            className="px-4 py-2 text-sm rounded-full font-medium cursor-pointer tracking-wide text-white border border-teal-600 bg-teal-600 hover:bg-teal-700 transition-all">Sign
+            className="px-4 py-2 text-sm rounded-full  cursor-pointer tracking-wide text-white border border-teal-600 bg-teal-600 hover:bg-teal-700 transition-all">Sign
             up</button>
 
           <button id="toggleOpen" className="lg:hidden cursor-pointer">

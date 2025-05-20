@@ -7,7 +7,7 @@ export default function HeroSection() {
       
       {/* Background Image */}
       <Image
-        src="/AI for Everyone.jpg" // Replace with your image path
+        src="/images/hero2.webp" // Replace with your image path
         alt="Hero background"
         fill
         className="object-cover brightness-50"
