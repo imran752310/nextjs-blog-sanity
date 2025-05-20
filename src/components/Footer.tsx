@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className=" w-full bg-black  mt-12">
+    <footer className=" w-full bg-black  mt-20">
       <section className="flex flex-col md:flex-row">
         <FooterLearn />
         <FooterContactForm />

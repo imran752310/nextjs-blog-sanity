@@ -15,7 +15,7 @@ export default function Gallery() {
   return (
     <>
       <div>
-        <h1 className="text-2xl font-bold uppercase my-20 text-center text-dark dark:text-light sm:text-3xl lg:text-5xl ">
+        <h1 className="text-2xl font-bold uppercase my-20 text-center text-dark dark:text-light sm:text-3xl lg:text-5xl  ">
           Our <span className="text-teal-600">Gallery</span>
         </h1>
       </div>

@@ -1,10 +1,14 @@
+"use client"
 import Link from "next/link";
-
+import { useTheme } from "next-themes"
+import ThemeToggle from "./ThemeToggle";
+ 
 export default function Navbar() {
+   const { setTheme } = useTheme()
   return (
    
 <>
-    <header className="flex shadow-md py-4 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-50">
+    <header className="flex shadow-md py-4 px-4 sm:px-10 bg-white dark:bg-gray-900 min-h-[70px] tracking-wide relative z-50">
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
         <Link href="/" className="max-sm:hidden font-extrabold text-teal-600 text-2xl">BLOG SITE</Link>
         <a href="javascript:void(0)" className="hidden max-sm:block"><img src="https://readymadeui.com/readymadeui-short.svg" alt="logo" className="w-9" /></a>
@@ -33,22 +37,23 @@ export default function Navbar() {
                 className="hover:text-teal-700 text-teal-700 block font-medium text-[15px]">Home</Link>
             </li>
 
-            <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='/'
-              className="hover:text-teal-700 text-slate-900 block font-medium text-[15px]">Feature</a>
+          
+            <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='blogs'
+              className="hover:text-teal-700  dark:text-white text-slate-900 block font-medium text-[15px]">Blog</a>
             </li>
             <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='/'
-              className="hover:text-teal-700 text-slate-900 block font-medium text-[15px]">Blog</a>
+              className="hover:text-teal-700  dark:text-white text-slate-900 block font-medium text-[15px]">About</a>
             </li>
             <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='/'
-              className="hover:text-teal-700 text-slate-900 block font-medium text-[15px]">About</a>
-            </li>
-            <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='/'
-              className="hover:text-teal-700 text-slate-900 block font-medium text-[15px]">Contact</a>
+              className="hover:text-teal-700  dark:text-white text-slate-900 block font-medium text-[15px]">Contact</a>
             </li>
           </ul>
         </div>
 
-        <div className="flex max-lg:ml-auto space-x-4">
+        <div className="flex items-center max-lg:ml-auto space-x-4">
+          <div>
+            <ThemeToggle />
+          </div>
           <button
             className="px-4 py-2 text-sm rounded-full font-medium cursor-pointer tracking-wide text-slate-900 border border-gray-400 bg-transparent hover:bg-gray-50 transition-all">Login</button>
           <button

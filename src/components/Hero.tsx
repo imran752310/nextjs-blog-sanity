@@ -24,7 +24,7 @@ export default function HeroSection() {
         </p>
 
         <Link
-          href="/blog"
+          href="/blogs"
           className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
         >
           Read Latest Articles

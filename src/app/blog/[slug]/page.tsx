@@ -33,7 +33,7 @@ export default async function page({params:{slug}}:{params:{slug:string}}) {
 
 
   return (
-    <article className="mt-12 mb-24 px-2 2xl:px-12 flex flex-col gap-y-8">
+    <article className="mt-12 mb-24 px-2 2xl:px-12 flex flex-col gap-y-8 w-[90%] mx-auto">
 
       {/* Blog Title */}
       <h1 className="text-xl xs:text-3xl lg:text-5xl font-bold text-dark dark:text-light">
@@ -44,7 +44,7 @@ export default async function page({params:{slug}}:{params:{slug:string}}) {
       <Image
         src={urlForImage(post.image)}
         width={800}
-        height={300}
+        height={200}
         alt="AI for everyone"
         className="rounded"
       />
