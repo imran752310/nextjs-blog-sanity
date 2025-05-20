@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative  h-[85vh] flex items-center justify-center bg-black text-white overflow-hidden mb-5">
+    <section  className="relative  h-[85vh] flex items-center justify-center bg-black text-white overflow-hidden mb-5">
       {/* Background Image */}
       <Image
         src="/images/hero2.webp" // Replace with your image path

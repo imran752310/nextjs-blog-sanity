@@ -14,7 +14,6 @@ export default async function Home() {
   }`;
 
   const posts: Post[] = await client.fetch(query);
-  console.log(posts);
 
   return (
     <>
